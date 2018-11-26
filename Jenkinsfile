@@ -2,9 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('List the directory') {
+        stage('Run maven proj') {
             steps {
                 bat 'mvn clean package'
+            }
+        }
+        stage('List the directory') {
+            steps {
+                bat 'dir'
             }
         }
     }
