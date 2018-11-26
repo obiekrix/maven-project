@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Building the code') {
             steps {
                 echo 'Building1..'
             }
         }
-        stage('Test') {
+        stage('Test for date command') {
             steps {
-                echo 'date'
+                date
             }
         }
-        stage('Deploy') {
+        stage('List the directory') {
             steps {
-                echo 'dir'
+                dir
             }
         }
     }
