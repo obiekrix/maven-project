@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Test for date command') {
             steps {
-                date
+                sh 'date'
             }
         }
         stage('List the directory') {
             steps {
-                dir
+                sh 'dir'
             }
         }
     }
