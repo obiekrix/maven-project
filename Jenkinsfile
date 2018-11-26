@@ -14,7 +14,7 @@ pipeline {
         }
         stage('List the directory') {
             steps {
-                bat 'mvn clean package'
+                bat 'date'
             }
         }
     }
